@@ -1,10 +1,10 @@
 
 
 /**
- * Write a description of class Door here.
+ * Creates a door. you can input the name of the door and if that door is open or closed.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Chris Samp and Duncan molloy 
+ * @1
  */
 public class Door
 {
