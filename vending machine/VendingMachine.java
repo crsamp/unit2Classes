@@ -9,8 +9,8 @@
 public class VendingMachine
 {
     /** description of instance variable x (add comment for each instance variable) */
-    public int numberOfTokens = 0;
-    public int numberOfCans = 0;
+    private int numberOfTokens = 0;
+    private int numberOfCans = 0;
 
     /**
      * Default constructor for objects of class VendingMachine
