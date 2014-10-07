@@ -14,19 +14,28 @@ import java.awt.Color;
 public class Sky
 {
     /** the width of the sky */
-    /** the height of the sky */
     private int xLength;
+    /** the height of the sky */
     private int yWidth;
+    /** the x coordinant of the sky */
+    private int xCord;
+    /** the y coordinant of the sky */
+    private int yCord;
     
     /**
      * Constructor for objects of class Sky
+     * @param xCoordinant   the x coordinant of the upper left corner of the sky rectangle.
+     * @param yCoordinant   the y coordinant of the upper left corner of the ksy rectangle.
      * @param xSky  the width of the sky
      * @param ySky  the height of the sky
+     * 
      */
-    public Sky(int xSky, int ySky)
+    public Sky(int xCoordinant, int yCoordinant, int xSky, int ySky)
     {
         xLength = xSky;
         yWidth = ySky;
+        xCord = xCoordinant;
+        yCord = yCoordinant;
     
     }
     /**
@@ -36,7 +45,7 @@ public class Sky
      */
     public void draw(Graphics2D g2)
     {
-        Rectangle blueSky = new Rectangle(0,0,xLength,yWidth);
+        Rectangle blueSky = new Rectangle(xCord,yCord,xLength,yWidth);
         
         
         

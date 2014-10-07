@@ -48,16 +48,16 @@ public class Building
     {
         Random lightsOn = new Random();
         Rectangle outsideBuilding = new Rectangle(xCoordinate,yCoordinate,xWidth,yHeight);
-        Rectangle windowOne = new Rectangle(xCoordinate+20,yCoordinate+50,40,40);
-        Rectangle windowTwo = new Rectangle(xCoordinate+95,yCoordinate+50,40,40);
-        Rectangle windowThree = new Rectangle(xCoordinate+20,yCoordinate+110,40,40);
-        Rectangle windowFour = new Rectangle(xCoordinate+95,yCoordinate+110,40,40);
-        Rectangle windowFive = new Rectangle(xCoordinate+20,yCoordinate+170,40,40);
-        Rectangle windowSix = new Rectangle(xCoordinate+95,yCoordinate+170,40,40);
-        Rectangle windowSeven = new Rectangle(xCoordinate+20,yCoordinate+230,40,40);
-        Rectangle windowEight = new Rectangle(xCoordinate+95,yCoordinate+230,40,40);
-        Rectangle door = new Rectangle(xCoordinate+57,yCoordinate+320,40,80);
-        Ellipse2D.Double doorKnob = new Ellipse2D.Double(xCoordinate+65.0,yCoordinate+350,5.0,5.0);
+        Rectangle windowOne = new Rectangle(xCoordinate+(xWidth/2)-55,yCoordinate+50,40,40);
+        Rectangle windowTwo = new Rectangle(xCoordinate+(xWidth/2)+20,yCoordinate+50,40,40);
+        Rectangle windowThree = new Rectangle(xCoordinate+(xWidth/2)-55,yCoordinate+110,40,40);
+        Rectangle windowFour = new Rectangle(xCoordinate+(xWidth/2)+20,yCoordinate+110,40,40);
+        Rectangle windowFive = new Rectangle(xCoordinate+(xWidth/2)-55,yCoordinate+170,40,40);
+        Rectangle windowSix = new Rectangle(xCoordinate+(xWidth/2)+20,yCoordinate+170,40,40);
+        Rectangle windowSeven = new Rectangle(xCoordinate+(xWidth/2)-55,yCoordinate+230,40,40);
+        Rectangle windowEight = new Rectangle(xCoordinate+(xWidth/2)+20,yCoordinate+230,40,40);
+        Rectangle door = new Rectangle(xCoordinate+(xWidth/2)-20,yCoordinate+yHeight-80,40,80);
+        Ellipse2D.Double doorKnob = new Ellipse2D.Double(xCoordinate+(xWidth/2)-15.0,yCoordinate+yHeight-50,5.0,5.0);
         g2.setPaint(Color.BLACK);
         g2.fill(outsideBuilding);
         g2.setPaint(Color.YELLOW);
